@@ -1,0 +1,61 @@
+!DOCTYPE html>
+
+<html lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        .box1 {
+            width: 100vh;
+            height: 40vh;
+            margin: 10vh auto 0;
+            background-color: #c38d69;
+        }
+
+        .sentence {
+            width:100vh;
+            position: absolute;
+            text-align: center;
+            animation:active 10s infinite;
+            opacity:0;
+        }
+
+        @keyframes active{
+            0%,35%,100%{
+                opacity:0;
+            }
+            10%,25%{
+                opacity:1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div class="sentence">
+            <div style="width:100%;height:6vh;"></div>
+            <div style=" font-size: 4vh; font-family: SimSun; color: #efddd3">青山欲共高人语</div>
+        </div>
+
+        <div class="sentence"style="animation-delay:2.5s ">
+            <div style="width:100%;height:6vh;"></div>
+            <div style=" font-size: 4vh; font-family: SimSun; color: #efddd3">联翩万马来无数</div>
+        </div>
+
+        <div class="sentence"style="animation-delay:5s">
+            <div style="width:100%;height:6vh;"></div>
+            <div style="        font-size: 4vh;
+        font-family: SimSun;
+        color: #efddd3">烟雨却低回</div>
+        </div>
+
+        <div class="sentence"style="animation-delay:7.5s">
+            <div style="width:100%;height:6vh;"></div>
+            <div style="        font-size: 4vh;
+        font-family: SimSun;
+        color: #efddd3">望来终不来</div>
+        </div>
+    </div>
+   
+</body>
+</html>
