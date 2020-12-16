@@ -1,61 +1,269 @@
-!DOCTYPE html>
-
-<html lang="en" >
+<!DOCTYPE html>
+<html>
 <head>
-    <meta charset="utf-8" />
-    <title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>茜茜公主💌</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    <!--    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">-->
+    <!--<meta itemprop="image" content="./images/fenxiang.png" />-->
     <style>
-        .box1 {
-            width: 100vh;
-            height: 40vh;
-            margin: 10vh auto 0;
-            background-color: #c38d69;
+        html {
+            height: 100%;
         }
 
-        .sentence {
-            width:100vh;
+        body {
+            font-family: "Helvetica Neue", "Luxi Sans", "DejaVu Sans", Tahoma, "Hiragino Sans GB", "Microsoft Yahei", sans-serif;
+            background: #79a8ae;
+            color: #CFEBE4;
+            font-size: 18px;
+            line-height: 2;
+            letter-spacing: 1.2px;
+            margin: 0;
+        }
+
+        a {
+            color: #ebf7f4;
+        }
+
+        .body--ready {
+            background: -webkit-linear-gradient(top, rgb(203, 235, 219) 0%, rgb(55, 148, 192) 120%);
+            background: -moz-linear-gradient(top, rgb(203, 235, 219) 0%, rgb(55, 148, 192) 120%);
+            background: -o-linear-gradient(top, rgb(203, 235, 219) 0%, rgb(55, 148, 192) 120%);
+            background: -ms-linear-gradient(top, rgb(203, 235, 219) 0%, rgb(55, 148, 192) 120%);
+            background: linear-gradient(top, rgb(203, 235, 219) 0%, rgb(55, 148, 192) 120%);
+        }
+
+        .text {
+            position: fixed;
+            bottom: 100px;
+            text-align: center;
+            font-size: 1.875rem;
+            width: 100%;
+        }
+
+        .canvas {
+            margin: 0 auto;
+            display: block;
+        }
+
+        img#logo {
+            width: 128px;
+            background-size: cover;
+            border-radius: 200px;
+            box-shadow: 0px 0px 40px rgba(63, 81, 181, 0.72);
+            border: 3px solid #00a0ff;
+            opacity: 1;
+            margin: 0 auto;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            transition: all 1.0s;
+        }
+
+        #logo:hover {
+            box-shadow: 0 0 10px #fff;
+            -webkit-box-shadow: 0 0 19px #fff;
+            transform: rotate(360deg);
+            -ms-transform: rotate(360deg); /* IE 9 */
+            -moz-transform: rotate(360deg); /* Firefox */
+            -webkit-transform: rotate(360deg); /* Safari 和 Chrome */
+            -o-transform: rotate(360deg); /* Opera */
+            filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+        }
+
+        .cs {
+            width: 100%;
+            height: 100%;
+            margin: 0 auto;
             position: absolute;
             text-align: center;
-            animation:active 10s infinite;
-            opacity:0;
+            background-image: linear-gradient(#a29bfe,#74b9ff,#81ecec);
         }
 
-        @keyframes active{
-            0%,35%,100%{
-                opacity:0;
+
+
+
+        .sentence {
+            width: 100%;
+            float: right;
+            opacity: 0;
+            text-align: center;
+            position: absolute;
+            animation: speak 4s 1;
+        }
+
+        .sen {
+            width: 100%;
+            float: right;
+            opacity: 0;
+            text-align: left;
+            position: absolute;
+            animation: spe 1s 1;
+            animation-fill-mode: forwards;
+        }
+
+
+
+
+        .box {
+            margin-top: 3vh;
+            width: 100%;
+            height: 30vh;
+        }
+
+        @keyframes speak {
+            0% {
+                opacity: 0;
             }
-            10%,25%{
-                opacity:1;
+
+            25%,75% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+
+        @keyframes spe {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
             }
         }
     </style>
+
 </head>
+
 <body>
-    <div class="box1">
-        <div class="sentence">
-            <div style="width:100%;height:6vh;"></div>
-            <div style=" font-size: 4vh; font-family: SimSun; color: #efddd3">青山欲共高人语</div>
+    <!--头像-->
+    <!--
+         .text {
+            position: fixed;
+            bottom: 80px;
+            text-align: center;
+            width: 100%;
+            font-weight: bold;
+        }
+
+        .text-right {
+            position: fixed;
+            bottom: 50px;
+            text-align: right;
+            width: 100%;
+            font-weight: bold;
+        }
+
+
+        -->
+
+    <div class="cs">
+        <!-- src表示头像的地址,建议上传到网页,然后放链接 可以上传到这个网站http://chuantu.biz/-->
+        <img src="http://a1.qpic.cn/psc?/V11ac4BB0YZPjT/ruAMsa53pVQWN7FLK88i5lfvQv13oPY*qccKPxFhz8Zic8ZhcPzW68SW79GTqgScpvS*eWQUXKCy4N7rut4BSIhy6lpTzBSE5iEGv5GnNU4!/b&ek=1&kp=1&pt=0&bo=GAUYBRgFGAUBGT4!&tl=3&vuin=1282838823&tm=1608102000&sce=60-2-2&rf=viewer_4" id="logo">
+
+        <div class="box">
+
+
+
+            <div class="sentence">
+                <div style="width:100%;height:10vh;"></div>
+                <div style=" font-size: 4vh; font-family: SimSun; color:white;">在一半的时间里</div>
+            </div>
+
+            <div class="sentence" style="animation-delay:3s">
+                <div style="width:100%;height:10vh;"></div>
+                <div style=" font-size: 4vh; font-family: SimSun; color:white;">我不能没有你</div>
+            </div>
+
+            <div class="sentence" style="animation-delay:6s">
+                <div style="width:100%;height:10vh;"></div>
+                <div style=" font-size: 4vh; font-family: SimSun; color:white;">在另一半时间里</div>
+            </div>
+
+            <div class="sentence" style="animation-delay:9s">
+                <div style="width:100%;height:10vh;"></div>
+                <div style=" font-size: 4vh; font-family: SimSun; color:white;">我又觉得无所谓</div>
+            </div>
+
+            <div class="sentence" style="animation-delay:12s">
+                <div style="width:100%;height:10vh;"></div>
+                <div style=" font-size: 4vh; font-family: SimSun; color:white;">这不在于我爱你多少</div>
+            </div>
+
+            <div class="sentence" style="animation-delay:15s">
+                <div style="width:100%;height:10vh;"></div>
+                <div style=" font-size: 4vh; font-family: SimSun; color:white;">而在于我能承受多少</div>
+            </div>
+
+
+            <div class="sen" style="animation-delay:19s">
+                <div style="width:100%;height:7vh;"></div>
+                <div style=" font-size: 5vh; font-family: SimSun; color:white;line-height:5vh;margin-left:8vh">今夜江河之源</div>
+                <div style=" font-size: 5vh; font-family: SimSun; color:white;line-height:5vh;margin-left:8vh">只亮我的油酥灯</div>
+                <div style=" font-size: 5vh; font-family: SimSun; color:white;line-height:5vh;margin-left:8vh">只照我的心上人</div>
+
+            </div>
+
         </div>
 
-        <div class="sentence"style="animation-delay:2.5s ">
-            <div style="width:100%;height:6vh;"></div>
-            <div style=" font-size: 4vh; font-family: SimSun; color: #efddd3">联翩万马来无数</div>
-        </div>
 
-        <div class="sentence"style="animation-delay:5s">
-            <div style="width:100%;height:6vh;"></div>
-            <div style="        font-size: 4vh;
-        font-family: SimSun;
-        color: #efddd3">烟雨却低回</div>
-        </div>
 
-        <div class="sentence"style="animation-delay:7.5s">
-            <div style="width:100%;height:6vh;"></div>
-            <div style="        font-size: 4vh;
-        font-family: SimSun;
-        color: #efddd3">望来终不来</div>
-        </div>
+
+
+
+
     </div>
-   
+
+    <p class="text" style="color: #8ef5ff;">
+
+        <br />
+        <span style="font-size:3vh;color:white; " id="span_dt_dt"></span>
+    </p>
+    <script language="javascript">
+        function show_date_time() {
+            window.setTimeout("show_date_time()", 1000);
+            //你俩在一起的那天
+            BirthDay = new Date("8/9/2019 00:00:00");
+            today = new Date();
+            timeold = (today.getTime() - BirthDay.getTime());
+            sectimeold = timeold / 1000
+            secondsold = Math.floor(sectimeold);
+            msPerDay = 24 * 60 * 60 * 1000
+            e_daysold = timeold / msPerDay
+            daysold = Math.floor(e_daysold);
+            e_hrsold = (e_daysold - daysold) * 24;
+            hrsold = Math.floor(e_hrsold);
+            e_minsold = (e_hrsold - hrsold) * 60;
+            minsold = Math.floor((e_hrsold - hrsold) * 60);
+            seconds = Math.floor((e_minsold - minsold) * 60);
+            span_dt_dt.innerHTML = daysold + "天" + hrsold + "小时" + minsold + "分" + seconds + "秒";
+        }
+
+        show_date_time();
+    </script>
+
+    <!--
+
+      <audio autoplay="autoplay" loop="loop">
+        <source src="https://y.qq.com/n/yqq/album/002y23E51YbgGj.html#stat=y_new.player.info_area.albumpic"
+                type="audio/mpeg">
+    </audio>
+        -->
+
+    <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="http://music.163.com/outchain/player?type=2&id=1377290021&auto=1&height=66"></iframe>
+
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
